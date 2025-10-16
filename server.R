@@ -2,7 +2,7 @@ library(shiny)
 library(shinythemes)
 library(dplyr)
 
-server <- function(input, output) {
+function(input, output) {
   
   # Affichage des paramètres
   output$txtout <- renderText({
@@ -90,3 +90,4 @@ server <- function(input, output) {
   })
   output$debitMax <- renderText({ round(simulation()$debit_max, 2) })
 }
+
