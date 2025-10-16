@@ -2,7 +2,7 @@ library(shiny)
 library(shinythemes)
 library(dplyr)
 
-h_mer <- read.csv("Marée.csv", stringsAsFactors = FALSE)
+h_mer <- read.csv("Maree.csv", stringsAsFactors = FALSE)
 h_mer$NGF <- as.numeric(h_mer$NGF)
 
 fluidPage(theme = shinytheme("cerulean"),
@@ -94,5 +94,6 @@ fluidPage(theme = shinytheme("cerulean"),
                   )
                 )
 )
+
 
 
