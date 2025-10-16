@@ -2,7 +2,7 @@ library(shiny)
 library(shinythemes)
 library(dplyr)
 
-ui <- fluidPage(theme = shinytheme("cerulean"),
+fluidPage(theme = shinytheme("cerulean"),
                 navbarPage(
                   title = div(
                     style = "display: flex; justify-content: space-between; align-items: center; width: 100%;",
@@ -91,3 +91,4 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                   )
                 )
 )
+
