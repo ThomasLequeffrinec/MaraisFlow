@@ -1,11 +1,3 @@
-library(shiny)
-library(shinythemes)
-library(dplyr)
-library(readr)
-
-h_mer <- read_csv("Maree.csv")
-h_mer$NGF <- as.numeric(h_mer$NGF)
-
 fluidPage(theme = shinytheme("cerulean"),
                 navbarPage(
                   title = div(
@@ -95,6 +87,7 @@ fluidPage(theme = shinytheme("cerulean"),
                   )
                 )
 )
+
 
 
 
